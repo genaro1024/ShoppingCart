@@ -1,4 +1,4 @@
-package com.gams.shoppingcart.shoppingcart;
+package com.gams.shoppingcart;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
