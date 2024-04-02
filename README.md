@@ -1,2 +1,2 @@
 # ShoppingCart
-Shopping cart at Sprig Boot
+Shopping cart at Spring Boot
