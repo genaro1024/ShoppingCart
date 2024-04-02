@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.gams.shoppingcart.api.entity.Product;
 import com.gams.shoppingcart.api.service.ProductServiceClient;
 
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 
@@ -23,8 +24,8 @@ public class ProductController {
     private ProductServiceClient productServiceClient;
 
     @GetMapping(path="/all")
-	public @ResponseBody Iterable<Product> getAllPersona() {
-		return productServiceClient.getAllProducts().toIterable();
+	public @ResponseBody Flux<Product> getAllPersona() {
+		return productServiceClient.getAllProducts();
 	}
     
     @GetMapping("/{id}")

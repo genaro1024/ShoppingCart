@@ -28,7 +28,7 @@ public class ProductServiceClient {
         return webClient.get()
                 .uri("/products")
                 .retrieve()
-                .bodyToFlux(Product.class);
+                .bodyToFlux(Product.class).log();
     }
 
 }
