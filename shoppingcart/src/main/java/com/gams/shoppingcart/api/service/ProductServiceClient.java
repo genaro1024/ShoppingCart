@@ -9,7 +9,8 @@ import reactor.core.publisher.Mono;
 @Service
 public class ProductServiceClient {
 
-    private final String baseUrl = "https://fakestoreapi.com";
+
+    private final String baseUrl="https://fakestoreapi.com";
     private final WebClient webClient;
 
 
