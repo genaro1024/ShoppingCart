@@ -310,7 +310,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\":1,\r\n    \"product_id\":1,\r\n    \"quantity\": 1,\r\n    \"order\":{\r\n        \"id\":1\r\n    }\r\n\r\n}",
+							"raw": "{\r\n    \"id\":2,\r\n    \"productId\":1,\r\n    \"quantity\": 1,\r\n    \"order\":{\r\n        \"id\":1\r\n    }\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
