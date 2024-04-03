@@ -1,0 +1,471 @@
+{
+	"info": {
+		"_postman_id": "634be8d7-04aa-4d9f-99a6-342120790094",
+		"name": "ShoppingCart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10951121"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "GetAllProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/shoppingcart/product/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"product",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProduct",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/shoppingcart/product/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "GetAllCustomers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/shoppingcart/customer/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"customer",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCustomer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/shoppingcart/customer/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateCustomer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":4,\r\n    \"firstName\": \"Hector\",\r\n    \"lastName\": \"Bueno\",\r\n    \"email\": \"hb@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/shoppingcart/customer/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"customer",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCustomer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"Alberto\",\r\n        \"lastName\": \"Bueno\",\r\n        \"email\": \"hb@gmail.com\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/shoppingcart/customer/update/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"customer",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "CreateOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"date\": \"2024-04-03\",\r\n    \"customer\":{\r\n        \"id\":1\r\n    }  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/shoppingcart/order/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"order",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateOrder",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2024-04-03\",\r\n    \"customer\":{\r\n        \"id\":2\r\n    }  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/shoppingcart/order/update/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"order",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllOrders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/shoppingcart/order/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"order",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOrder",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/shoppingcart/order/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"order",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Detail",
+			"item": [
+				{
+					"name": "GetAllDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/shoppingcart/detail/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"detail",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllDetailsByOrder",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/shoppingcart/detail/order/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"detail",
+								"order",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateDetail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"product_id\":1,\r\n    \"quantity\": 1,\r\n    \"order\":{\r\n        \"id\":1\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/shoppingcart/detail/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"detail",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateDetail",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\":1,\r\n    \"quantity\": 1,\r\n    \"order\":{\r\n        \"id\":1\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/shoppingcart/detail/update/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"detail",
+								"update",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pay",
+			"item": [
+				{
+					"name": "GetAllPays",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/shoppingcart/pay/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"pay",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPay",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/shoppingcart/pay/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"pay",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreatePay",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"date\": \"2024-04-03\",\r\n    \"paid\": true,\r\n    \"voucher\": \"7826347001001\",\r\n    \"order\":{\r\n        \"id\":1\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/shoppingcart/pay/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"pay",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePay",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2024-04-03\",\r\n    \"paid\": true,\r\n    \"voucher\": \"7826347001001\",\r\n    \"order\":{\r\n        \"id\":1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/shoppingcart/pay/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shoppingcart",
+								"pay",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
