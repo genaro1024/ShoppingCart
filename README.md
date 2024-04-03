@@ -11,12 +11,12 @@
 * JDK 17
 * No database configuration is needed, since an in-memory database is used, so it is not a requirement
 
-## Get Started
+### Get Started
 * install jdk 17
 * clone the repository https://github.com/genaro1024/ShoppingCart.git
 * run with maven or java
 
-## Postman Collection
+### Postman Collection
 * ShoppingCart.postman_collection.json
 
 
